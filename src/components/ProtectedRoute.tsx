@@ -1,6 +1,5 @@
 import { useAuth0 } from "@auth0/auth0-react";
 import { useEffect, type JSX, useRef } from "react";
-import { useNavigate, useRouterState } from "@tanstack/react-router";
 
 type ProtectedRouteProps = {
     children: JSX.Element;

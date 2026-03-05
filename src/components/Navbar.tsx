@@ -29,25 +29,25 @@ export function MainMenu() {
                     </MenubarMenu>
 
                     <MenubarMenu>
-                        <MenubarTrigger onClick={() => navigate({ to: "/nosotros" })}>
+                        <MenubarTrigger onClick={() => navigate({ to: "/" })}>
                             Nosotros
                         </MenubarTrigger>
                     </MenubarMenu>
 
                     <MenubarMenu>
-                        <MenubarTrigger onClick={() => navigate({ to: "/productos" })}>
+                        <MenubarTrigger onClick={() => navigate({ to: "/" })}>
                             Productos
                         </MenubarTrigger>
                     </MenubarMenu>
 
                     <MenubarMenu>
-                        <MenubarTrigger onClick={() => navigate({ to: "/blog" })}>
+                        <MenubarTrigger onClick={() => navigate({ to: "/" })}>
                             Blog
                         </MenubarTrigger>
                     </MenubarMenu>
 
                     <MenubarMenu>
-                        <MenubarTrigger onClick={() => navigate({ to: "/pdf" })}>
+                        <MenubarTrigger onClick={() => navigate({ to: "/" })}>
                             Archivos PDF
                         </MenubarTrigger>
                     </MenubarMenu>
