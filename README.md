@@ -72,3 +72,4 @@ export default defineConfig([
 ])
 ```
 # obrix-front
+# obrix-front
