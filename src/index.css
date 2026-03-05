@@ -1,0 +1,145 @@
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+@import "tailwindcss";
+
+@tailwind base;
+
+@custom-variant dark (&:is(.dark *));
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  width: full;
+  color-scheme: light;
+  width: 100vw;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+--radius: 0.625rem;
+
+  /* Background principal del sistema */
+  --background: rgba(16, 32, 55, 1);
+
+  /* Texto principal */
+  --foreground: rgba(240, 234, 222, 1);
+
+  /* Cards */
+  --card: rgba(20, 38, 65, 1);
+  --card-foreground: rgba(240, 234, 222, 1);
+
+  /* Popover */
+  --popover: rgba(20, 38, 65, 1);
+  --popover-foreground: rgba(240, 234, 222, 1);
+
+  /* Color primario corporativo */
+  --primary: rgba(244, 132, 32, 1);
+  --primary-foreground: rgba(16, 32, 55, 1);
+
+  /* Secundarios */
+  --secondary: rgba(25, 45, 75, 1);
+  --secondary-foreground: rgba(240, 234, 222, 1);
+
+  /* Muted */
+  --muted: rgba(30, 52, 85, 1);
+  --muted-foreground: rgba(180, 185, 195, 1);
+
+  /* Accent */
+  --accent: rgba(244, 132, 32, 0.15);
+  --accent-foreground: rgba(244, 132, 32, 1);
+
+  /* Destructive (lo dejo rojo profesional compatible) */
+  --destructive: rgba(220, 38, 38, 1);
+
+  /* Borders */
+  --border: rgba(255, 255, 255, 0.08);
+  --input: rgba(255, 255, 255, 0.1);
+  --ring: rgba(244, 132, 32, 0.5);
+
+  /* Charts adaptados a branding */
+  --chart-1: rgba(244, 132, 32, 1);
+  --chart-2: rgba(16, 32, 55, 0.8);
+  --chart-3: rgba(240, 234, 222, 0.7);
+  --chart-4: rgba(244, 132, 32, 0.6);
+  --chart-5: rgba(16, 32, 55, 0.5);
+
+  /* Sidebar */
+  --sidebar: rgba(12, 24, 42, 1);
+  --sidebar-foreground: rgba(240, 234, 222, 1);
+  --sidebar-primary: rgba(244, 132, 32, 1);
+  --sidebar-primary-foreground: rgba(16, 32, 55, 1);
+  --sidebar-accent: rgba(244, 132, 32, 0.15);
+  --sidebar-accent-foreground: rgba(244, 132, 32, 1);
+  --sidebar-border: rgba(255, 255, 255, 0.08);
+  --sidebar-ring: rgba(244, 132, 32, 0.5);
+}
+
+
+
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --radius-4xl: calc(var(--radius) + 16px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  /* IE y Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}

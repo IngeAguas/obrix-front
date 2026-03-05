@@ -1,0 +1,23 @@
+import { Auth0Provider } from "@auth0/auth0-react";
+import { useState } from "react";
+
+export function Auth0ProviderWithRouter({ children }: { children: React.ReactNode }) {
+    const [isLoading, setIsLoading] = useState(false)
+
+
+   
+    if (isLoading) return <>Cargando</>
+
+        return (
+        <Auth0Provider
+            domain={import.meta.env.VITE_AUTH0_DOMAIN}
+            clientId={import.meta.env.VITE_AUTH0_CLIENT_ID}
+            authorizationParams={{
+                redirect_uri: window.location.origin,
+
+            }}
+        >
+            {children}
+        </Auth0Provider>
+        );
+}
