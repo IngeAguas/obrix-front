@@ -7,7 +7,6 @@ type ProtectedRouteProps = {
 export function ProtectedRoute({ children }: ProtectedRouteProps) {
     const { isAuthenticated, isLoading, loginWithRedirect, error } = useAuth0();
     const hasTriggeredLogin = useRef(false);
-    console.log(isAuthenticated)
     useEffect(() => {
         if (!isLoading && !isAuthenticated && !hasTriggeredLogin.current) {
             hasTriggeredLogin.current = true;

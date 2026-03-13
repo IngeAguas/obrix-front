@@ -8,14 +8,14 @@ export default function Footer() {
     return (
         <footer className="bg-gray-950 text-gray-300 w-full">
             <Separator className="w-full " />
-            <div className="flex mx-auto gap-18 *:flex *:flex-col  p-10">
+            <div className="flex mx-auto justify-between gap-18 *:flex *:flex-col  py-6 px-18">
 
                 {/* Contacto */}
                 <div>
                     <h3 className="text-lg font-medium text-white mb-4">
                         Contacto
                     </h3>
-                    <ul className="space-y-2 text-sm text-gray-400">
+                    <ul className="space-y-3 text-sm text-gray-400">
                         <li>Email: info@empresa.com</li>
                         <li>Teléfono: +57 300 000 0000</li>
                         <li>Dirección: Cúcuta, Norte de Santander Colombia</li>
@@ -36,7 +36,7 @@ export default function Footer() {
             </div>
 
             {/* Línea inferior */}
-            <div className="border-t border-gray-800 py-6 text-center text-sm text-gray-500">
+            <div className="border-t border-gray-800 py-3 text-center text-sm text-gray-500">
                 © {new Date().getFullYear()} OBrix. Todos los derechos reservados.
             </div>
         </footer>
