@@ -54,7 +54,7 @@ export function MainMenu() {
                             </Button>
                         </SheetTrigger>
 
-                        <SheetContent side="right" className="flex flex-col gap-6 pt-10">
+                        <SheetContent side="left" className="flex flex-col gap-6 pt-10">
 
                             <Button
                                 variant="ghost"
@@ -64,6 +64,7 @@ export function MainMenu() {
                             </Button>
 
                             <Button
+                                className="text-start"
                                 variant="ghost"
                                 onClick={() => navigate({ to: "/" })}
                             >

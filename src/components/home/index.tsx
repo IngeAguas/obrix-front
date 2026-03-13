@@ -17,11 +17,11 @@ export default function Home() {
                         </span>
                     </div>
 
-                    <h1 className="font-semibold text-[48px] max-w-165">
+                    <h1 className="font-semibold text-xl md:text-[48px] max-w-165">
                         El nuevo ladrillo digital de la industria de la construcción
                     </h1>
 
-                    <span className="max-w-165 text-xl">
+                    <span className="max-w-165 text-sm md:text-xl">
                         O-BriX conecta constructoras, arquitectos e ingenieros directamente con fabricantes, optimizando compras y reduciendo costos entre el
                         <span className="text-primary font-semibold"> 30% y 45%.</span>
                     </span>
@@ -30,14 +30,14 @@ export default function Home() {
                         Solicitar Acceso <ArrowRight />
                     </Button>
 
-                    <div className="flex gap-10 max-w-[500px] w-full justify-center">
-                        <div>
+                    <div className="flex gap-4 md:gap-10 max-w-125 w-full justify-center">
+                        <div className="flex flex-col md:flex-row gap-2">
                             <span className="font-semibold">2.5M</span> ahorrados
                         </div>
-                        <div>
+                        <div className="flex flex-col md:flex-row gap-2">
                             <span className="font-semibold">127</span> proyectos
                         </div>
-                        <div>
+                        <div className="flex flex-col md:flex-row gap-2">
                             <span className="font-semibold">8</span> países
                         </div>
                     </div>

@@ -8,7 +8,7 @@ export default function Footer() {
     return (
         <footer className="bg-gray-950 text-gray-300 w-full">
             <Separator className="w-full " />
-            <div className="flex mx-auto justify-between gap-18 *:flex *:flex-col  py-6 px-18">
+            <div className="flex flex-col md:flex-row mx-auto justify-between gap-18 *:flex *:flex-col  py-6 px-18">
 
                 {/* Contacto */}
                 <div>
