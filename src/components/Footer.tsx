@@ -16,9 +16,9 @@ export default function Footer() {
                         Contacto
                     </h3>
                     <ul className="space-y-3 text-sm text-gray-400">
-                        <li>Email: info@empresa.com</li>
-                        <li>Teléfono: +57 300 000 0000</li>
-                        <li>Dirección: Cúcuta, Norte de Santander Colombia</li>
+                        <li>Email: obrixcolombia@gmail.com</li>
+                        <li>Teléfono: +57 301 611 1556</li>
+                        <li>Dirección: Av 5 # 17N 03, Cúcuta, Colombia, 540001</li>
                     </ul>
                 </div>
 
@@ -28,7 +28,7 @@ export default function Footer() {
                         Síguenos
                     </h3>
                     <div className="flex flex-col gap-4 *:flex *:gap-2 *:items-center">
-                        <a href="#" className="hover:text-white transition flex items-center"> <FaFacebook />Facebook</a>
+                        <a href="https://www.facebook.com/OBriXCol?locale=es_LA" className="hover:text-white transition flex items-center"> <FaFacebook />Facebook</a>
                         <a href="#" className="hover:text-white transition"> <FaInstagram /> Instagram</a>
                         <a href="#" className="hover:text-white transition"> <FaLinkedin />LinkedIn</a>
                     </div>
