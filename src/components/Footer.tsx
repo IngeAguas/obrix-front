@@ -30,7 +30,7 @@ export default function Footer() {
                     <div className="flex flex-col gap-4 *:flex *:gap-2 *:items-center">
                         <a href="https://www.facebook.com/OBriXCol?locale=es_LA" className="hover:text-white transition flex items-center"> <FaFacebook />Facebook</a>
                         <a href="#" className="hover:text-white transition"> <FaInstagram /> Instagram</a>
-                        <a href="#" className="hover:text-white transition"> <FaLinkedin />LinkedIn</a>
+                        {/* <a href="#" className="hover:text-white transition"> <FaLinkedin />LinkedIn</a> */}
                     </div>
                 </div>
             </div>

@@ -18,7 +18,7 @@ export function MainMenu() {
     const navigate = useNavigate()
 
     return (
-        <div className="flex w-full">
+        <div className="flex w-full bg-white">
             <Menubar className="flex w-full items-center justify-between py-6 px-4">
 
                 {/* LOGO */}
